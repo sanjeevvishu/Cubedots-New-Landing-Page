@@ -1,0 +1,150 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.mainHomePage {
+    position: relative;
+    height: auto;
+}
+
+.mainNavBar {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.mainNavBar ul.navbar-nav {
+    margin: auto;
+}
+
+.signNavbar {
+    margin-bottom: 0;
+}
+
+.signNavbar li {
+    list-style: none;
+}
+
+.projectDetailSlider {
+    position: absolute;
+    top: 54%;
+    /* left: 8%; */
+}
+
+.mainHomePage .carousel .slide img {
+    height: 100vh;
+}
+
+.mainHomePage .carousel .control-dots .dot {
+    width: 14%;
+    border-radius: 0;
+    position: relative;
+}
+
+.mainHomePage .carousel .control-dots .dot::after {
+    content: "Projects Details";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    color: #fff;
+    font-weight: 600;
+    left: 19%;
+    bottom: -18px;
+    width: auto;
+    font-size: 19px;
+}
+.mainHomePage .carousel .control-dots .dot {
+    border-radius: 20px;
+    height: 5px;
+    box-shadow: none;
+}
+
+.projectLable {
+    position: absolute;
+    bottom: 32px;
+    width: 13%;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 19px;
+}
+
+.mainHomePage .carousel.carousel-slider .control-arrow {
+    display: none;
+}
+
+.projectDetailSlider {
+    text-align: initial;
+    color: aliceblue;
+}
+
+.projectDetailSlider h4,
+h1,
+h5 {
+    margin-bottom: 20px;
+}
+
+.projectDetailSlider h1 {
+    font-weight: 700;
+}
+
+.navbarMenu {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 6px 20px;
+    border-radius: 20px;
+}
+.navbarMenu .nav-item .home{
+    color:#f53f0c;
+}
+.navbarMenu .nav-item a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.projectBtn {
+    background-color: #f53f0c;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 36px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.projectBtn:focus {
+    outline: none;
+}
+
+.signBtn {
+    background-color: #f53f0c;
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 20px;
+}
+
+.mainHomePage .carousel.carousel-slider ul.control-dots {
+    bottom: 5%;
+}
+
+
+
+@media (max-width:500px) {
+    .mainHomePage .carousel .slide img {
+        height:500px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+    .projectDetailSlider{
+        top: 33%;
+    }
+    .mainHomePage .carousel .control-dots .dot{
+        width: 12%;
+    }
+}
