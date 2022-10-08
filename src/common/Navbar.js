@@ -30,7 +30,7 @@ function Navbar() {
                                     <NavLink className="nav-link" href="#">Projects</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" href="#">contact Us</NavLink>
+                                    <NavLink className="nav-link" href="#">Contact Us</NavLink>
                                 </li>
                             </ul>
                             <ul className="signNavbar">

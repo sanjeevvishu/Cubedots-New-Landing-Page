@@ -1,6 +1,7 @@
 [
     {
         "id" : 1,
+        "video_url": "/assets/homevideo/2.mp4",
         "image_url" : "/assets/images/01.jpg",
         "location_name" : "Istanbul Turkey",
         "project_name" : "Tema Istanbul 2",
@@ -9,6 +10,7 @@
     },
     {
         "id" : 2,
+        "video_url": "/assets/homevideo/2.mp4",
         "image_url" : "/assets/images/02.jpg",
         "location_name" : "Istanbul Turkey",
         "project_name" : "Torino Oro24",
@@ -17,6 +19,7 @@
     },
     {
         "id" : 3,
+        "video_url": "/assets/homevideo/2.mp4",
         "image_url" : "/assets/images/skyland1.jpg",
         "location_name" : "Istanbul Turkey",
         "project_name" : "Skyland Istanbul",
@@ -25,6 +28,7 @@
     },
     {
         "id" : 4,
+        "video_url": "/assets/homevideo/2.mp4",
         "image_url" : "/assets/images/alya1.jpg",
         "location_name" : "Istanbul Turkey",
         "project_name" : "Alya 4 Mevsim",
@@ -33,6 +37,7 @@
     },
     {
         "id" : 5,
+        "video_url": "/assets/homevideo/2.mp4",
         "image_url" : "/assets/images/nishantasi1.jpg",
         "location_name" : "Istanbul Turkey",
         "project_name" : "Nishantashi Koru",
@@ -41,6 +46,7 @@
     },
     {
         "id" : 6,
+        "video_url": "/assets/homevideo/3.mp4",
         "image_url" : "/assets/images/yaman3.jpg",
         "location_name" : "Istanbul Turkey",
         "project_name" : "Avrupa Konutlari Yamanevler",

@@ -30,12 +30,18 @@ body {
 
 .projectDetailSlider {
     position: absolute;
-    top: 54%;
-    /* left: 8%; */
+    top: 43%;
+    margin-left: 38px;
+}
+
+.progressBarContainer h3 {
+    font-size: 19px;
 }
 
 .mainHomePage .carousel .slide img {
     height: 100vh;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 .mainHomePage .carousel .control-dots .dot {
@@ -56,6 +62,7 @@ body {
     width: auto;
     font-size: 19px;
 }
+
 .mainHomePage .carousel .control-dots .dot {
     border-radius: 20px;
     height: 5px;
@@ -93,12 +100,14 @@ h5 {
 
 .navbarMenu {
     background: rgba(255, 255, 255, 0.5);
-    padding: 6px 20px;
+    padding: 0px 20px;
     border-radius: 20px;
 }
-.navbarMenu .nav-item .home{
-    color:#f53f0c;
+
+.navbarMenu .nav-item .home {
+    color: #f53f0c;
 }
+
 .navbarMenu .nav-item a {
     color: #000;
     font-weight: 500;
@@ -133,18 +142,271 @@ h5 {
     bottom: 5%;
 }
 
+.agentDeveloperSection {
+    padding: 20px 0;
+}
 
+.exploreMoreBtn {
+    background-color: #f53f0c;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    padding: 3px 15px;
+}
+
+.agentSection,
+.developerSection {
+    border: 1px solid #000;
+    padding: 20px;
+}
+
+.agentSection h3,
+.developerSection h3 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.mainHomePage .videoSlider video {
+    object-fit: cover;
+}
+
+.agentMainSection,
+.developerMainSection {
+    height: auto;
+    transition: all ease-in-out 5s;
+    margin-top: -7px;
+}
+
+h3 {
+    margin: 5px 0;
+}
+
+.sliderContainer {
+    position: relative;
+}
+
+/* .slider {
+    width: 500px;
+    margin: 30px 50px 50px;
+  } */
+
+/* .slick-slide {
+    background: #3a8999;
+    color: white;
+    padding: 80px 0 120px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+  } */
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+/* .slick-slide:nth-child(odd) {
+    background: #e84a69;
+  } */
+.yellow-text h3 {
+    color: #fff;
+}
+
+.progressBarContainer {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    text-align: center;
+    /* left: 150px; */
+    display: flex;
+    justify-content: center;
+}
+
+.progressBarContainer div {
+    display: block;
+    width: 10%;
+    padding: 0;
+    cursor: pointer;
+    margin-right: 5%;
+    float: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.progressBarContainer div:last-child {
+    margin-right: 0;
+}
+
+.progressBarContainer div span.progressBar {
+    width: 100%;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+}
+
+.progressBarContainer div span.progressBar .inProgress {
+    background-color: rgb(133, 22, 22);
+    width: 0%;
+    height: 4px;
+}
+
+.agentTabs{
+    background-color: #002532;
+    color: #fff;
+    padding: 40px;
+    height: auto;
+    position: relative;
+}
+.developersSection{
+    background-color: #202020;
+    color: #fff;
+    padding: 40px;
+    height: auto;
+    position: relative;
+}
+.mainHomePage .nav-pills .nav-link.active {
+    /* color: red; */
+    background-color: #002532;
+    border-radius: 0;
+    padding: 20px;
+    color: #fff;
+}
+.mainHomePage .nav-pills .nav-link{
+    font-size: 25px;
+    font-weight: 700;
+    color: #002532;
+}
+.firstSection{
+    margin-top: 20px;
+}
+.firstSection .backBtnofagent {
+    color: #002532;
+    background: none;
+    border: none;
+    font-size: 29px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+@media (max-width:1366px) {
+    .projectDetailSlider {
+        margin-left: -28px;
+    }
+}
+
+@media (max-width:1024px) {
+    .projectDetailSlider {
+        margin-left: 44px;
+        top: 23%;
+    }
+
+    .projectDetailSlider h1 {
+        font-size: 30px;
+    }
+    .progressBarContainer{
+        bottom: 20px;
+    }
+}
+
+@media (max-width:812px) {
+    .projectBtn{
+        margin-top: 5px;
+    }
+    .projectDetailSlider h4,
+    h5 {
+        margin-bottom: 5PX;
+    }
+    .projectDetailSlider{
+        margin-left: -2px;
+    }
+}
+@media (max-width:768px) {
+    .projectDetailSlider h1 {
+        font-size: 25px;
+        margin-bottom: 5PX;
+    }
+
+    .projectDetailSlider h4,
+    h5 {
+        margin-bottom: 10px;
+    }
+
+    .projectBtn {
+        margin-top: 10px;
+    }
+
+    .projectDetailSlider {
+        margin-left: 26px;
+    }
+}
+
+@media (max-width:736px) {
+    .projectDetailSlider{
+        margin-left: -56px;
+    }
+    .progressBarContainer{
+        bottom: 38px;
+    }
+}
+@media (max-width:736px) {
+    .projectDetailSlider{
+        margin-left: -25px;
+    }
+}
 
 @media (max-width:500px) {
     .mainHomePage .carousel .slide img {
-        height:500px;
+        height: 500px;
         object-fit: cover;
         object-position: 50% 50%;
     }
-    .projectDetailSlider{
-        top: 33%;
+
+    .progressBarContainer h3 {
+        display: none;
     }
-    .mainHomePage .carousel .control-dots .dot{
+
+    .slick-slide img {
+        height: 373px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+
+    .projectDetailSlider {
+        top: 41% ;
+        margin-left: 8px ;
+    }
+
+    .projectDetailSlider h1 {
+        font-size: 20px ;
+    }
+
+    .projectBtn {
+        padding: 8px 29px;
+        font-size: 12px;
+    }
+
+    .mainHomePage .carousel .control-dots .dot {
         width: 12%;
+    }
+    .agentSection , .developerSection{
+        margin-top: 5px;
+    }
+}
+
+@media (max-width:360px) {
+    .projectDetailSlider h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .projectDetailSlider h4,
+    h5 {
+        margin-bottom: 10px;
     }
 }
