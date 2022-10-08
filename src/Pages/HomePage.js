@@ -24,7 +24,7 @@ function HomePage() {
             {
                 "id": 1,
                 "video_url": "/assets/homevideo/2.mp4",
-                "image_url": "/assets/images/01.jpg",
+                "image_url": "assets/images/01.jpg",
                 "location_name": "Istanbul Turkey",
                 "project_name": "Tema Istanbul 2",
                 "min_price": "200,000",
@@ -33,7 +33,7 @@ function HomePage() {
             {
                 "id": 2,
                 "video_url": "/assets/homevideo/2.mp4",
-                "image_url": "/assets/images/02.jpg",
+                "image_url": "assets/images/02.jpg",
                 "location_name": "Istanbul Turkey",
                 "project_name": "Torino Oro24",
                 "min_price": "657,000",
@@ -42,7 +42,7 @@ function HomePage() {
             {
                 "id": 3,
                 "video_url": "/assets/homevideo/2.mp4",
-                "image_url": "/assets/images/skyland1.jpg",
+                "image_url":"assets/images/01.jpg",
                 "location_name": "Istanbul Turkey",
                 "project_name": "Skyland Istanbul",
                 "min_price": "785,000",
@@ -51,7 +51,7 @@ function HomePage() {
             {
                 "id": 4,
                 "video_url": "/assets/homevideo/2.mp4",
-                "image_url": "/assets/images/alya1.jpg",
+                "image_url": "assets/images/02.jpg",
                 "location_name": "Istanbul Turkey",
                 "project_name": "Alya 4 Mevsim",
                 "min_price": "58,000",
@@ -60,7 +60,7 @@ function HomePage() {
             {
                 "id": 5,
                 "video_url": "/assets/homevideo/2.mp4",
-                "image_url": "/assets/images/nishantasi1.jpg",
+                "image_url": "assets/images/01.jpg",
                 "location_name": "Istanbul Turkey",
                 "project_name": "Nişantaşı Koru",
                 "min_price": "130,000",
@@ -69,7 +69,7 @@ function HomePage() {
             {
                 "id": 6,
                 "video_url": "/assets/homevideo/3.mp4",
-                "image_url": "/assets/images/yaman3.jpg",
+                "image_url": "assets/images/02.jpg",
                 "location_name": "Istanbul Turkey",
                 "project_name": "Avrupa Konutlari Yamanevler",
                 "min_price": "235,000",
@@ -233,7 +233,7 @@ function HomePage() {
                         <div class="sliderContainer ">
                             <div class="slider single-item">
                                 <div>
-                                    <img className="img-fluid" src="/assets/images/01.jpg" />
+                                    <img className="img-fluid" src={projectDetail[0].image_url} />
                                     <div className="container" >
                                         <div className="row">
                                             <div className="projectDetailSlider">
@@ -251,7 +251,7 @@ function HomePage() {
                                     </div>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src="/assets/images/01.jpg" />
+                                    <img className="img-fluid" src={projectDetail[1].image_url}/>
                                     <div className="container" >
                                         <div className="row">
                                             <div className="projectDetailSlider">
@@ -269,7 +269,7 @@ function HomePage() {
                                     </div>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src="/assets/images/01.jpg" />
+                                    <img className="img-fluid" src={projectDetail[2].image_url} />
                                     <div className="container" >
                                         <div className="row">
                                             <div className="projectDetailSlider">
@@ -287,7 +287,7 @@ function HomePage() {
                                     </div>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src="/assets/images/01.jpg" />
+                                    <img className="img-fluid" src={projectDetail[3].image_url} />
                                     <div className="container" >
                                         <div className="row">
                                             <div className="projectDetailSlider">
@@ -305,7 +305,7 @@ function HomePage() {
                                     </div>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src="/assets/images/01.jpg" />
+                                    <img className="img-fluid" src={projectDetail[4].image_url}/>
                                     <div className="container" >
                                         <div className="row">
                                             <div className="projectDetailSlider">
@@ -323,7 +323,7 @@ function HomePage() {
                                     </div>
                                 </div>
                                 <div>
-                                    <img className="img-fluid" src="/assets/images/01.jpg" />
+                                    <img className="img-fluid" src={projectDetail[5].image_url}  />
                                     <div className="container" >
                                         <div className="row">
                                             <div className="projectDetailSlider">
