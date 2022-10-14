@@ -924,9 +924,9 @@ h5 {
     }
 
     .mainNavBar nav.navbar.navbar-expand-lg .container-fluid a.navbar-brand {
-        display: flex;
-        width: 89%;
-        justify-content: end;
+        width: 85%;
+        -webkit-justify-content: end;
+        -webkit-align-items: center;
     }
 
     .projectDetailSlider h4,
@@ -984,6 +984,7 @@ h5 {
     ul.signNavbar svg.bi.bi-person-fill {
         margin-top: -8px;
     }
+    
 }
 
 @media (max-width:736px) {
