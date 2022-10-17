@@ -22,7 +22,7 @@ function HomePage() {
 
     const [index, setIndex] = useState(0);
     const [projectsData, setProjectsData] = useState([])
-    const [proName, setProName] = useState(["Tema Istanbul 2", "Torino Oro24", "Skyland Istanbul", "Alya 4 Mevsim", "Nişantaşı Koru", "Avrupa Konutlari Yamanevler"])
+    const [proName, setProName] = useState(["Tema Istanbul 2", "Torino Oro24", "Skyland Istanbul", "Alya 4 Mevsim", "Nisantası Koru", "Avrupa Konutlari Yamanevler"])
     const [projectDetail, setProjectDetail] = useState(
         [
             {
@@ -98,7 +98,7 @@ function HomePage() {
 
 
         $(".slider").slick({
-            infinite: true,
+            infinite: false,
             arrows: false,
             dots: false,
             autoplay: false,
@@ -182,14 +182,14 @@ function HomePage() {
 
                                         <div className="projectDetailSlider ">
                                             <h4>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16.8" height="24" viewBox="0 0 16.8 24">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16.8 24">
                                                     <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M15.9,3a8.394,8.394,0,0,0-8.4,8.4c0,6.3,8.4,15.6,8.4,15.6s8.4-9.3,8.4-15.6A8.394,8.394,0,0,0,15.9,3Zm0,11.4a3,3,0,1,1,3-3A3,3,0,0,1,15.9,14.4Z" transform="translate(-7.5 -3)" fill="#fff" />
                                                 </svg>
                                                 {projectDetail[0].location_name}
                                             </h4>
                                             <h1>{projectDetail[0].project_name}</h1>
                                             <h5>${`${projectDetail[0].min_price} - ${projectDetail[0].max_price}`}</h5>
-                                            <button className="projectBtn">View Project</button>
+                                            <button className="projectBtn">Explore More</button>
                                         </div>
                                     </div>
 
@@ -202,14 +202,14 @@ function HomePage() {
 
                                         <div className="projectDetailSlider ">
                                             <h4>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16.8" height="24" viewBox="0 0 16.8 24">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16.8 24">
                                                     <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M15.9,3a8.394,8.394,0,0,0-8.4,8.4c0,6.3,8.4,15.6,8.4,15.6s8.4-9.3,8.4-15.6A8.394,8.394,0,0,0,15.9,3Zm0,11.4a3,3,0,1,1,3-3A3,3,0,0,1,15.9,14.4Z" transform="translate(-7.5 -3)" fill="#fff" />
                                                 </svg>
                                                 {projectDetail[1].location_name}
                                             </h4>
                                             <h1>{projectDetail[1].project_name}</h1>
                                             <h5>${`${projectDetail[1].min_price} - ${projectDetail[1].max_price}`}</h5>
-                                            <button className="projectBtn">View Project</button>
+                                            <button className="projectBtn">Explore More</button>
                                         </div>
                                     </div>
 
@@ -222,14 +222,14 @@ function HomePage() {
 
                                         <div className="projectDetailSlider ">
                                             <h4>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16.8" height="24" viewBox="0 0 16.8 24">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16.8 24">
                                                     <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M15.9,3a8.394,8.394,0,0,0-8.4,8.4c0,6.3,8.4,15.6,8.4,15.6s8.4-9.3,8.4-15.6A8.394,8.394,0,0,0,15.9,3Zm0,11.4a3,3,0,1,1,3-3A3,3,0,0,1,15.9,14.4Z" transform="translate(-7.5 -3)" fill="#fff" />
                                                 </svg>
                                                 {projectDetail[2].location_name}
                                             </h4>
                                             <h1>{projectDetail[2].project_name}</h1>
                                             <h5>${`${projectDetail[2].min_price} - ${projectDetail[2].max_price}`}</h5>
-                                            <button className="projectBtn">View Project</button>
+                                            <button className="projectBtn">Explore More</button>
                                         </div>
                                     </div>
 
@@ -242,14 +242,14 @@ function HomePage() {
 
                                         <div className="projectDetailSlider ">
                                             <h4>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16.8" height="24" viewBox="0 0 16.8 24">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16.8 24">
                                                     <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M15.9,3a8.394,8.394,0,0,0-8.4,8.4c0,6.3,8.4,15.6,8.4,15.6s8.4-9.3,8.4-15.6A8.394,8.394,0,0,0,15.9,3Zm0,11.4a3,3,0,1,1,3-3A3,3,0,0,1,15.9,14.4Z" transform="translate(-7.5 -3)" fill="#fff" />
                                                 </svg>
                                                 {projectDetail[3].location_name}
                                             </h4>
                                             <h1>{projectDetail[3].project_name}</h1>
                                             <h5>${`${projectDetail[3].min_price} - ${projectDetail[3].max_price}`}</h5>
-                                            <button className="projectBtn">View Project</button>
+                                            <button className="projectBtn">Explore More</button>
                                         </div>
                                     </div>
 
@@ -262,14 +262,14 @@ function HomePage() {
 
                                         <div className="projectDetailSlider ">
                                             <h4>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16.8" height="24" viewBox="0 0 16.8 24">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16.8 24">
                                                     <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M15.9,3a8.394,8.394,0,0,0-8.4,8.4c0,6.3,8.4,15.6,8.4,15.6s8.4-9.3,8.4-15.6A8.394,8.394,0,0,0,15.9,3Zm0,11.4a3,3,0,1,1,3-3A3,3,0,0,1,15.9,14.4Z" transform="translate(-7.5 -3)" fill="#fff" />
                                                 </svg>
                                                 {projectDetail[4].location_name}
                                             </h4>
                                             <h1>{projectDetail[4].project_name}</h1>
                                             <h5>${`${projectDetail[4].min_price} - ${projectDetail[4].max_price}`}</h5>
-                                            <button className="projectBtn">View Project</button>
+                                            <button className="projectBtn">Explore More</button>
                                         </div>
 
                                     </div>
@@ -281,14 +281,14 @@ function HomePage() {
                                             src={projectDetail[5].video_url} />
                                         <div className="projectDetailSlider ">
                                             <h4>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16.8" height="24" viewBox="0 0 16.8 24">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16.8 24">
                                                     <path id="Icon_material-location-on" data-name="Icon material-location-on" d="M15.9,3a8.394,8.394,0,0,0-8.4,8.4c0,6.3,8.4,15.6,8.4,15.6s8.4-9.3,8.4-15.6A8.394,8.394,0,0,0,15.9,3Zm0,11.4a3,3,0,1,1,3-3A3,3,0,0,1,15.9,14.4Z" transform="translate(-7.5 -3)" fill="#fff" />
                                                 </svg>
                                                 {projectDetail[5].location_name}
                                             </h4>
                                             <h1>{projectDetail[5].project_name}</h1>
                                             <h5>${`${projectDetail[5].min_price} - ${projectDetail[5].max_price}`}</h5>
-                                            <button className="projectBtn">View Project</button>
+                                            <button className="projectBtn">Explore More</button>
                                         </div>
                                     </div>
                                 </div>

@@ -96,7 +96,7 @@ body {
 .oracleSecondDiv::before {
     content: "";
     position: absolute;
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 1;
@@ -106,7 +106,7 @@ body {
 .firstDiv::after {
     content: "";
     position: absolute;
-    width: 4px;
+    width: 6px;
     height: 100%;
     background: #fff;
     z-index: 4;
@@ -114,9 +114,11 @@ body {
 }
 
 .secondSliderContent {
-    /* z-index: 1; */
+    z-index: 2;
     height: 100%;
     padding: 50px;
+    color: #E1E1E1;
+    font-weight: 100;
 }
 
 .firstDivSliderThirdAnimation .carousel-root {
@@ -127,13 +129,11 @@ body {
     height: 100%;
 }
 
-.firstDivSliderThirdAnimation::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+
+
+.mainNavBar nav.navbar.navbar-expand-lg .container-fluid a.navbar-brand {
+    -webkit-justify-content: end;
+    -webkit-align-items: center;
 }
 
 .firstDiv1 {
@@ -146,6 +146,7 @@ body {
     padding: 10px 50px;
     cursor: pointer;
     color: #fff;
+    border-radius: 8px;
 }
 
 .secondDiv {
@@ -200,6 +201,23 @@ body {
     padding: 50px;
 }
 
+.firstDivSliderThird::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* transform: rotateY(-49deg); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform-style: preserve-3d;
+    /* left: -130%; */
+    padding: 50px;
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 0;
+}
+
 .firstDivSliderThirdAnimation {
     width: 100%;
     background: url("/public/assets/images/yaman3.jpg");
@@ -219,33 +237,52 @@ body {
 
 }
 
+.firstDivSliderThirdAnimation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* z-index: -1; */
+}
+
 .flipCard {
     width: 100%;
     /* height: 100vh; */
     perspective: 1000px;
 }
 
-.firstDivSlidersecond::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+.secondSliderContent li.slide.selected.previous h2 {
+    margin-bottom: 70px;
 }
 
-.firstDivSliderThird::before {
+.secondSliderContent ul.slider.animated li.slide.selected h2 {
+    margin-bottom: 65px;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.agentTabHeading {
+    text-align: center;
+    font-weight: 700;
+    margin: 36px 0;
+}
+
+/* .firstDivSlidersecond::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
-}
+} */
+
+
 
 .firstDivSlidersecond {
     width: 100%;
     background: #002532;
     color: #fff;
-    height: 100%;
+    height: 100vh;
     z-index: 1;
     /* transform: translateX(0%); */
     position: relative;
@@ -259,6 +296,12 @@ body {
     padding: 50px;
 }
 
+.secondSliderContent div#v-pills-tabContent div#v-pills-home h2 {
+    margin-bottom: 70px;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
 .firstDivSlidersecondAnimation {
     width: 100%;
     background: #002532;
@@ -266,7 +309,7 @@ body {
     height: 100vh;
     z-index: 1;
     position: relative;
-    text-align: center;
+    text-align: start;
     transition: transform 0.9s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -275,6 +318,13 @@ body {
     left: -50%;
 }
 
+/* .firstDivSlidersecondAnimation{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+} */
 .firstDivSlider {
     top: 0;
     height: 100vh;
@@ -287,7 +337,7 @@ body {
 
 
 .oracleFirstDiv {
-    width: 50%;
+    width: 100%;
     background: url("/public/assets/images/skyland1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -322,7 +372,7 @@ button {
 }
 
 .oracleSecondDiv {
-    width: 50%;
+    width: 100%;
     background: url("/public/assets/images/nishantasi1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -331,17 +381,18 @@ button {
     height: 100vh;
     z-index: 2;
     /* transform: translateX(100%); */
-    transition: all .4s;
+    transition: all 0.7s;
     /* transition: width 1s; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: start;
     padding: 50px;
+    position: relative;
 }
 
 .oracleSecondDivTranslate {
-    width: 50%;
+    width: 100%;
     background: url("/public/assets/images/02.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -350,12 +401,13 @@ button {
     height: 100vh;
     z-index: 2;
     transform: translateX(100%);
-    transition: 1s;
+    transition: 0.82s;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: end;
     padding: 50px;
+    position: relative;
 }
 
 .oraclefirstDivTranslate {
@@ -369,7 +421,7 @@ button {
     z-index: 2;
     /* opacity: 0; */
     transform: translateX(-100%);
-    transition: transform 1s;
+    transition: transform 0.8s;
     /* transition: opacity 4s;  
     transition: z-index 4s; */
     display: flex;
@@ -377,6 +429,7 @@ button {
     align-items: center;
     text-align: end;
     padding: 50px;
+    position: relative;
 }
 
 .oraclefirstDivTranslateZindex {
@@ -402,16 +455,6 @@ button {
     display: flex;
 }
 
-/*carousel*/
-/* .secondSliderContent .carousel.carousel-slider {
-    height: 100%;
-} */
-
-/* .secondSliderContent .carousel-root {
-    height: 100%;
-} */
-
-/*carousel*/
 
 /*oracle section*/
 .mainHomePage {
@@ -426,7 +469,7 @@ button {
 }
 
 .mainNavBar img {
-    height: 30px;
+    height: 35px;
 }
 
 .mainNavBar ul.navbar-nav {
@@ -453,6 +496,7 @@ button {
     top: 48%;
     left: 7%;
     width: 100%;
+    z-index: 2;
 }
 
 .mainHomePage .mainNavBar nav.navbar.navbar-expand-lg {
@@ -460,8 +504,10 @@ button {
 }
 
 .progressBarContainer h3 {
-    font-size: 19px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+    text-align: start;
 }
 
 .mainHomePage .mainNavBar nav.navbar.navbar-expand-lg {
@@ -531,21 +577,24 @@ h5 {
     background: rgba(0, 0, 0, 0.2);
     padding: 0px 20px;
     border-radius: 20px;
-    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, .6);
+    width: 50%;
+    justify-content: space-evenly;
 }
 
 /* .navbar-nav .nav-link.active{
     color: red;
 } */
-.navbarMenu .nav-item .home {
+/* .navbarMenu .nav-item .home {
     color: #f53f0c;
-}
+} */
 
 .navbarMenu .nav-item a {
     color: #fff;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
-    padding: 6px;
+    padding: 8px;
+    font-size: 14px;
 }
 
 .projectDetailSlider svg {
@@ -555,13 +604,34 @@ h5 {
 .projectBtn {
     background-color: #f53f0c;
     border: none;
-    border-radius: 20px;
-    padding: 4px 30px;
-    font-size: 18px;
+    border-radius: 4px;
+    padding: 6px 34px;
+    font-size: 14px;
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
     cursor: pointer;
     /* margin-top: 30px; */
+}
+
+.projectBtnExplore {
+    background-color: #f53f0c;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 34px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 70px;
+}
+
+.secondSliderContent .carousel .control-dots {
+    text-align: start;
+    bottom: -14px;
+}
+
+.secondSliderContent p.carousel-status {
+    display: none;
 }
 
 .projectBtn:focus {
@@ -596,8 +666,12 @@ h5 {
 }
 
 .dummyContent {
-    height: 50vh;
-    background-color: aquamarine;
+    height: 100vh;
+    background-color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .agentSection {
@@ -665,6 +739,22 @@ h5 {
     width: 100%;
     height: 100%;
 }
+
+.autoplay-video::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 99.3%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+button.backBtnSlider img {
+    width: 10px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
 
 .agentSectionheight {
     height: 100vh;
@@ -882,7 +972,11 @@ h5 {
 @media (max-width:1024px) {
     .projectDetailSlider {
         /* margin-left: 35px; */
-        top: 36%;
+        top: 46%;
+    }
+
+    .navbarMenu {
+        width: 64%;
     }
 
     .projectDetailSlider h1 {
@@ -901,6 +995,11 @@ h5 {
         margin-top: 5px;
     }
 
+    .oracleSectionHeight {
+        overflow-y: visible;
+        overflow-x: visible;
+    }
+
     .signNavbar {
         display: none;
     }
@@ -911,6 +1010,10 @@ h5 {
 
     .navbarMenu {
         background-color: #fff;
+    }
+
+    .navbarMenu {
+        width: 100%;
     }
 
     .navbar-collapse {
@@ -925,8 +1028,8 @@ h5 {
 
     .mainNavBar nav.navbar.navbar-expand-lg .container-fluid a.navbar-brand {
         width: 85%;
-        -webkit-justify-content: end;
-        -webkit-align-items: center;
+        justify-content: end;
+        align-items: center;
     }
 
     .projectDetailSlider h4,
@@ -944,7 +1047,16 @@ h5 {
 @media (max-width:768px) {
     .projectDetailSlider h1 {
         font-size: 25px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+    }
+
+    .navbarMenu {
+        width: 100%;
+    }
+
+    .oracleSectionHeight {
+        overflow-y: hidden;
+        overflow-x: hidden;
     }
 
     .navbar-collapse {
@@ -964,7 +1076,7 @@ h5 {
 
     .projectDetailSlider h4,
     h5 {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     .projectBtn {
@@ -976,15 +1088,13 @@ h5 {
     }
 
     .mainNavBar nav.navbar.navbar-expand-lg .container-fluid a.navbar-brand {
-        display: flex;
-        width: 80%;
+        width: 85%;
         justify-content: end;
     }
 
     ul.signNavbar svg.bi.bi-person-fill {
         margin-top: -8px;
     }
-    
 }
 
 @media (max-width:736px) {
@@ -1000,13 +1110,18 @@ h5 {
         opacity: 0;
     }
 
+    .oracleFirstDiv .oraclefirstDivTranslate {
+        opacity: 0;
+        transition: 0;
+    }
+
     .firstDivFlex {
         display: block;
     }
 
     .oracleSectionHeight {
         overflow-y: visible;
-        overflow-x: visible;
+        /* overflow-x: visible; */
     }
 
     .secondSliderContent .carousel.carousel-slider {
@@ -1039,10 +1154,11 @@ h5 {
 
     .mainNavBar nav.navbar.navbar-expand-lg .container-fluid a.navbar-brand {
         width: 85%;
-        -webkit-justify-content: end;
-        -webkit-align-items: center;
+        justify-content: end;
+        align-items: center;
     }
-    .signNavbarSecond{
+
+    .signNavbarSecond {
         margin-bottom: 0;
     }
 }
@@ -1054,18 +1170,56 @@ h5 {
         object-fit: cover;
         object-position: 50% 50%;
     }
+    .secondSliderContent div#v-pills-tabContent div#v-pills-home h2{
+        margin-bottom: 20px;
+        margin-top: 10px;
+
+    }
+    .secondSliderContent ul.slider.animated li.slide.selected h2{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .projectDetailSlider h4,
+    h5 {
+        font-size: 15px;
+    }
 
     .secondSliderContent {
         padding: 30px;
+    }
+
+    .projectDetailSlider svg {
+        width: 12px;
+    }
+
+    .oracleFirstDiv,
+    .firstDivSlidersecond,
+    .oraclefirstDivTranslate,
+    .oracleSecondDiv,
+    .oracleSecondDivTranslate,
+    .firstDivSlidersecondAnimation,
+    .firstDivSliderThird,
+    .firstDivSliderThirdAnimation,
+    .oracleSection,
+    .oracleSectionHeight {
+        transition: 0s;
     }
 
     /* .secondSliderContent .carousel .control-dots{
         bottom: 34%;
     } */
     .signNavbarSecond {
-        margin-bottom: 0;
+        margin-bottom: 5px;
         margin-top: -5px;
         padding-left: 43px;
+    }
+
+    .mainNavBar img {
+        height: 27px;
+    }
+
+    ul.signNavbarSecond li.nav-item a.nav-link svg {
+        height: 20px;
     }
 
     .mainNavBar nav.navbar.navbar-expand-lg .container-fluid a.navbar-brand {
