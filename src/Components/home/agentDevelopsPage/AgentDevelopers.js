@@ -62,27 +62,22 @@ function AgentDevelopers() {
     return (
         <>
             <div className={oracleHeight ? 'oracleSection' : 'oracleSectionHeight'}>
-                <div className="">
-                    <div className="firstDivFlex">
-
-                        <div className={oracleHeight ? "firstDiv" : widthIncrease ? "oracleFirstDiv" : "oraclefirstDivTranslate"}>
-                            <div className={oracleHeight ? "firstDiv1" : "firstDiv0"}>
-                                <h6 className="forAgents" onClick={onClickHandlerWidthFalse}>For Agents</h6>
-                                {/* <button onClick={executeScroll}>Move Div 1 </button>  */}
-                                {/* <button onClick={onClickHandlerwidth} >Back</button> */}
-                                <span onClick={onClickHandlerWidthFalse} className="clickFirstDivSection"></span>
-                            </div>
-
+                <div className="firstDivFlex">
+                    <div className={oracleHeight ? "firstDiv" : widthIncrease ? "oracleFirstDiv" : "oraclefirstDivTranslate"}>
+                        <div className={oracleHeight ? "firstDiv1" : "firstDiv0"}>
+                            <h6 className="forAgents" onClick={onClickHandlerWidthFalse}>For Agents</h6>
+                            <span onClick={onClickHandlerWidthFalse} className="clickFirstDivSection"></span>
                         </div>
-                        <div className={oracleHeight ? "secondDiv" : widthIncrease ? "oracleSecondDiv" : "oracleSecondDivTranslate"}>
-                            <div className={oracleHeight ? "firstDiv1" : "firstDiv0"}>
-                                <h6 className="forAgents" onClick={onClickHandlerWidthFalse}>For Developers</h6>
-                                <span onClick={onClickHandlerWidthFalse} className="clickFirstDivSection"></span>
-                            </div>
 
-                        </div>
-                        <div ref={myRef}></div>
                     </div>
+                    <div className={oracleHeight ? "secondDiv" : widthIncrease ? "oracleSecondDiv" : "oracleSecondDivTranslate"}>
+                        <div className={oracleHeight ? "firstDiv1" : "firstDiv0"}>
+                            <h6 className="forAgents" onClick={onClickHandlerWidthFalse}>For Developers</h6>
+                            <span onClick={onClickHandlerWidthFalse} className="clickFirstDivSection"></span>
+                        </div>
+
+                    </div>
+                    <div ref={myRef}></div>
                 </div>
                 {
                     !oracleHeight

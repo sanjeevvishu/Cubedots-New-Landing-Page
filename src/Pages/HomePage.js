@@ -5,7 +5,6 @@ import { Carousel } from 'react-responsive-carousel';
 import { useState } from "react";
 import axios from "axios"
 import AgentDevelopersPage from "./AgentDevelopersPage"
-import ReactPlayer from 'react-player'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import $ from 'jquery';
@@ -98,10 +97,10 @@ function HomePage() {
 
 
         $(".slider").slick({
-            infinite: false,
+            infinite: true,
             arrows: false,
             dots: false,
-            autoplay: false,
+            // autoplay: false,
             speed: 800,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -177,7 +176,7 @@ function HomePage() {
                             <div class="slider single-item">
                                 <div>
                                     <div class="autoplay-video">
-                                        <Video className="videoPlayer" playsInline autoPlay={true} playButton={false} loop muted controls={false}
+                                        <Video className="videoPlayer" playsInline autoPlay playButton={false} loop muted controls={false}
                                             src={projectDetail[0].video_url} />
 
                                         <div className="projectDetailSlider ">
