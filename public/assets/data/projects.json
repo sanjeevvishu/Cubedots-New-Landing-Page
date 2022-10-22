@@ -1,56 +1,56 @@
 [
     {
-        "id" : 1,
-        "video_url": "/assets/homevideo/2.mp4",
-        "image_url" : "/assets/images/01.jpg",
-        "location_name" : "Istanbul Turkey",
-        "project_name" : "Tema Istanbul 2",
-        "min_price" : "200,000",
-        "max_price" : "300,000"
+        "id": 1,
+        "video_url": "/assets/videos/1.mp4",
+        "image_url": "/assets/images/01.jpg",
+        "location_name": "Istanbul Turkey",
+        "project_name": "Tema Istanbul 2",
+        "min_price": "200,000",
+        "max_price": "300,000"
     },
     {
-        "id" : 2,
-        "video_url": "/assets/homevideo/2.mp4",
-        "image_url" : "/assets/images/02.jpg",
-        "location_name" : "Istanbul Turkey",
-        "project_name" : "Torino Oro24",
-        "min_price" : "657,000",
-        "max_price" : "421,000"
+        "id": 2,
+        "video_url": "/assets/videos/2.mp4",
+        "image_url": "/assets/images/02.jpg",
+        "location_name": "Istanbul Turkey",
+        "project_name": "Torino Oro24",
+        "min_price": "657,000",
+        "max_price": "421,000"
     },
     {
-        "id" : 3,
-        "video_url": "/assets/homevideo/2.mp4",
-        "image_url" : "/assets/images/skyland1.jpg",
-        "location_name" : "Istanbul Turkey",
-        "project_name" : "Skyland Istanbul",
-        "min_price" : "785,000",
-        "max_price" : "589,000"
+        "id": 3,
+        "video_url": "/assets/videos/3.mp4",
+        "image_url": "/assets/images/01.jpg",
+        "location_name": "Istanbul Turkey",
+        "project_name": "Skyland Istanbul",
+        "min_price": "785,000",
+        "max_price": "589,000"
     },
     {
-        "id" : 4,
-        "video_url": "/assets/homevideo/2.mp4",
-        "image_url" : "/assets/images/alya1.jpg",
-        "location_name" : "Istanbul Turkey",
-        "project_name" : "Alya 4 Mevsim",
-        "min_price" : "58,000",
-        "max_price" : "965,000"
+        "id": 4,
+        "video_url": "/assets/videos/4.mp4",
+        "image_url": "/assets/images/02.jpg",
+        "location_name": "Istanbul Turkey",
+        "project_name": "Alya 4 Mevsim",
+        "min_price": "58,000",
+        "max_price": "965,000"
     },
     {
-        "id" : 5,
-        "video_url": "/assets/homevideo/2.mp4",
-        "image_url" : "/assets/images/nishantasi1.jpg",
-        "location_name" : "Istanbul Turkey",
-        "project_name" : "Nishantashi Koru",
-        "min_price" : "130,000",
-        "max_price" : "236,000"
+        "id": 5,
+        "video_url": "/assets/videos/5.mp4",
+        "image_url": "/assets/images/01.jpg",
+        "location_name": "Istanbul Turkey",
+        "project_name": "Nisantası Koru",
+        "min_price": "130,000",
+        "max_price": "236,000"
     },
     {
-        "id" : 6,
-        "video_url": "/assets/homevideo/3.mp4",
-        "image_url" : "/assets/images/yaman3.jpg",
-        "location_name" : "Istanbul Turkey",
-        "project_name" : "Avrupa Konutlari Yamanevler",
-        "min_price" : "235,000",
-        "max_price" : "345,000"
+        "id": 6,
+        "video_url": "/assets/videos/222.mp4",
+        "image_url": "/assets/images/02.jpg",
+        "location_name": "Istanbul Turkey",
+        "project_name": "Avrupa Konutlari Yamanevler",
+        "min_price": "235,000",
+        "max_price": "345,000"
     }
 ]

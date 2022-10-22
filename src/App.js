@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Suspense >
-        <BrowserRouter basename={"/"}>
+        <BrowserRouter basename={"/cubedots_new"}>
           <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route exact path="aboutus" element={<HomePage />}></Route>

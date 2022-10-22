@@ -4,17 +4,43 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto';
 }
 
 /*oracle section*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 .oracleSection {
     height: 350px;
     position: relative;
     background-color: #000;
     z-index: 0;
-    transition: .4s;
+    transition: all 0.5s;
     top: 0;
+}
+
+.overflowOracle {
+    overflow: hidden scroll;
+    height: 100%;
+    position: relative;
+    padding-bottom: 10px;
 }
 
 .clickFirstDivSection {
@@ -52,7 +78,7 @@ body {
     height: 350px;
     z-index: 2;
     /* transform: translateX(-50%); */
-    transition: .4s;
+    transition: all 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,13 +107,14 @@ body {
 .oraclefirstDivTranslate::before,
 .firstDiv::before,
 .secondDiv::before,
-.oracleFirstDiv::before {
+.oracleFirstDiv::before,
+.firstContentData::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
+    z-index: 0;
 
 }
 
@@ -123,10 +150,13 @@ body {
     height: 100%;
 }
 
-.secondSliderContent .carousel.carousel-slider {
+/* .secondSliderContent .carousel.carousel-slider {
     height: 100%;
+} */
+.secondSliderContent .carousel-root .carousel.carousel-slider {
+    height: 100%;
+    overflow: hidden scroll;
 }
-
 
 
 .mainNavBar nav.navbar.navbar-expand-lg .container-fluid a.navbar-brand {
@@ -136,6 +166,8 @@ body {
 
 .firstDiv1 {
     z-index: 2;
+    width: 36%;
+    text-align: center;
 }
 
 .forAgents {
@@ -157,7 +189,7 @@ body {
     height: 350px;
     z-index: 2;
     /* transform: translateX(100%); */
-    transition: .4s;
+    transition:all 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,6 +198,16 @@ body {
     position: relative;
 }
 
+.collapseCard div#collapseExample .card.card-body {
+    background-color: transparent;
+}
+
+.collapseCard {
+    background-color: #002532;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
 
 .firstDivSliderFirst {
     background-color: #fff;
@@ -233,6 +275,28 @@ body {
     transform: translate(130%);
     left: -130%;
 
+}
+
+.firstContentData {
+    width: 100%;
+    background: url("/public/assets/images/01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    transition: transform 0.8999s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: rotateY(0deg);
+    transform: translate(130%);
+    left: -130%;
+}
+
+.firstContentData .secondSliderContent .carousel-root {
+    height: 100%;
 }
 
 .firstDivSliderThirdAnimation::before {
@@ -316,6 +380,22 @@ body {
     left: -50%;
 }
 
+.firstContentDataFirstSlide {
+    width: 100%;
+    background: #043e55;
+    color: #fff;
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+    text-align: start;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: rotateY(0deg);
+    transform: translateX(50%);
+    left: -50%;
+}
+
 /* .firstDivSlidersecondAnimation{
     content: "";
     position: absolute;
@@ -379,9 +459,7 @@ button {
     color: #fff;
     height: 100vh;
     z-index: 2;
-    /* transform: translateX(100%); */
-    transition: all 0.4s;
-    /* transition: width 1s; */
+    transition: all 1s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,7 +478,7 @@ button {
     height: 100vh;
     z-index: 2;
     transform: translateX(100%);
-    transition: 0.82s;
+    transition: all 0.8s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -975,6 +1053,14 @@ button.backBtnSlider img {
         top: 46%;
     }
 
+    /* .overflowOracle {
+        overflow: visible;
+    }
+
+    .secondSliderContent .carousel-root .carousel.carousel-slider {
+        overflow: visible;
+    } */
+
     .navbarMenu {
         width: 78%;
     }
@@ -993,6 +1079,10 @@ button.backBtnSlider img {
 @media (max-width:812px) {
     .projectBtn {
         margin-top: 5px;
+    }
+
+    .overflowOracle {
+        padding-top: 20px;
     }
 
     .firstDivSlidersecondAnimation {
@@ -1020,7 +1110,7 @@ button.backBtnSlider img {
     }
 
     .firstDivSliderFirst {
-        min-height: 200px;
+        min-height: 550px;
     }
 
     .firstDivSliderThirdAnimation {
@@ -1059,6 +1149,7 @@ button.backBtnSlider img {
 
     .signNavbarSecond {
         display: block;
+        margin: 0;
     }
 
     .mainNavBar nav.navbar.navbar-expand-lg .container-fluid a.navbar-brand {
@@ -1137,6 +1228,10 @@ button.backBtnSlider img {
         /* margin-left: -56px; */
     }
 
+    .overflowOracle {
+        padding-top: 20px;
+    }
+
     .progressBarContainer {
         bottom: 38px;
     }
@@ -1206,10 +1301,44 @@ button.backBtnSlider img {
         object-position: 50% 50%;
     }
 
+    .oracleSectionHeight {
+        margin: 20px;
+    }
+
+    .overflowOracle {
+        padding-top: 0;
+    }
+
+    .secondSliderContent {
+        padding: 10px 30px 30px 30px;
+    }
+
+    .backBtnSlider {
+        color: #fff;
+        justify-content: start;
+    }
+
+    .overflowOracle {
+        overflow: visible;
+        height: 100%;
+        position: relative;
+        padding-bottom: 10px;
+    }
+
+    .firstDiv1 {
+        z-index: 2;
+        width: 80%;
+        text-align: center;
+    }
+
     .firstDivSliderFirst {
-        min-height: 193px;
-        margin-bottom: 22px;
+        min-height: 20px;
+        /* margin-bottom: 22px; */
         /* margin-top: 8px; */
+    }
+
+    .collapseCard div#collapseExample .card.card-body button {
+        color: #fff;
     }
 
     .secondSliderContent div#v-pills-tabContent div#v-pills-home h2 {
@@ -1220,16 +1349,12 @@ button.backBtnSlider img {
 
     .secondSliderContent ul.slider.animated li.slide.selected h2 {
         margin-bottom: 20px;
-        margin-top: 10px;
+        margin-top: 30px;
     }
 
     .projectDetailSlider h4,
     h5 {
         font-size: 15px;
-    }
-
-    .secondSliderContent {
-        padding: 30px;
     }
 
     .projectDetailSlider svg {

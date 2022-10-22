@@ -17,7 +17,7 @@ import 'react-html5video/dist/styles.css';
 
 function HomePage() {
 
-    let publicPath = "http://reservation.cuengine.com/cubedots_new";
+    let publicPath = "https://reservation.cuengine.com/cubedots_new/";
 
     const [index, setIndex] = useState(0);
     const [projectsData, setProjectsData] = useState([])
@@ -104,6 +104,9 @@ function HomePage() {
             speed: 800,
             slidesToShow: 1,
             slidesToScroll: 1,
+            playsinline: true,
+            preload: true,
+            autoPlay: true
         });
 
         //ticking machine
@@ -165,6 +168,9 @@ function HomePage() {
         fetchProjects();
     }, [])
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, []);
 
     return (
         <>
@@ -176,8 +182,8 @@ function HomePage() {
                             <div class="slider single-item">
                                 <div>
                                     <div class="autoplay-video">
-                                        <Video className="videoPlayer" playsInline autoPlay playButton={false} loop muted controls={false}
-                                            src={projectDetail[0].video_url} />
+                                        <Video className="videoPlayer" preload playsInline autoPlay playButton={false} loop muted controls={false}
+                                            src={publicPath + projectDetail[0].video_url} />
 
                                         <div className="projectDetailSlider ">
                                             <h4>
@@ -196,8 +202,8 @@ function HomePage() {
                                 </div>
                                 <div>
                                     <div class="autoplay-video">
-                                        <Video className="videoPlayer" playsInline autoPlay={true} loop muted controls={false}
-                                            src={projectDetail[1].video_url} />
+                                        <Video className="videoPlayer" preload playsInline autoPlay={true} loop muted controls={false}
+                                            src={publicPath + projectDetail[1].video_url} />
 
                                         <div className="projectDetailSlider ">
                                             <h4>
@@ -216,8 +222,8 @@ function HomePage() {
                                 </div>
                                 <div>
                                     <div class="autoplay-video">
-                                        <Video className="videoPlayer" playsInline autoPlay={true} loop muted controls={false}
-                                            src={projectDetail[2].video_url} />
+                                        <Video className="videoPlayer" preload playsInline autoPlay={true} loop muted controls={false}
+                                            src={publicPath + projectDetail[2].video_url} />
 
                                         <div className="projectDetailSlider ">
                                             <h4>
@@ -236,8 +242,8 @@ function HomePage() {
                                 </div>
                                 <div>
                                     <div class="autoplay-video">
-                                        <Video className="videoPlayer" playsInline autoPlay={true} loop muted controls={false}
-                                            src={projectDetail[3].video_url} />
+                                        <Video className="videoPlayer" preload playsInline autoPlay={true} loop muted controls={false}
+                                            src={publicPath + projectDetail[3].video_url} />
 
                                         <div className="projectDetailSlider ">
                                             <h4>
@@ -256,8 +262,8 @@ function HomePage() {
                                 </div>
                                 <div>
                                     <div class="autoplay-video">
-                                        <Video className="videoPlayer" playsInline autoPlay={true} loop muted controls={false}
-                                            src={projectDetail[4].video_url} />
+                                        <Video className="videoPlayer" preload playsInline autoPlay={true} loop muted controls={false}
+                                            src={publicPath + projectDetail[4].video_url} />
 
                                         <div className="projectDetailSlider ">
                                             <h4>
@@ -276,8 +282,8 @@ function HomePage() {
                                 </div>
                                 <div>
                                     <div class="autoplay-video">
-                                        <Video className="videoPlayer" playsInline autoPlay={true} loop muted control={false}
-                                            src={projectDetail[5].video_url} />
+                                        <Video className="videoPlayer" preload playsInline autoPlay={true} loop muted control={false}
+                                            src={publicPath + projectDetail[5].video_url} />
                                         <div className="projectDetailSlider ">
                                             <h4>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16.8 24">
@@ -322,6 +328,9 @@ function HomePage() {
                     </div>
                 </section >
                 <AgentDevelopersPage />
+                <div className="dummyContent">
+                    Next Section
+                </div>
             </div >
         </>
     )

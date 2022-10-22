@@ -5,6 +5,7 @@ import { isMobile } from 'react-device-detect';
 
 
 function Navbar() {
+    let publicPath = "https://reservation.cuengine.com/cubedots_new";
     const [active, setActive] = useState(null)
 
     const mobileCheck = () => {
@@ -22,7 +23,7 @@ function Navbar() {
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <Link className="navbar-brand" href="#">
-                            <img src="/assets/images/cubedotslogo/cubedots_logo.png" height="28" />
+                            <img src={publicPath + "/assets/images/cubedotslogo/cubedots_logo.png"} height="28" />
                             <ul className="signNavbarSecond">
                                 <li className="nav-item">
                                     {
@@ -32,21 +33,20 @@ function Navbar() {
                                                     <path id="Path_25" data-name="Path 25" d="M603,163.924v2.39a1.527,1.527,0,0,0-.062.255,15.6,15.6,0,0,1-.4,2.516,16.992,16.992,0,0,1-18.9,12.875,16.434,16.434,0,0,1-8.669-3.906,16.683,16.683,0,0,1-5.7-9.942c-.107-.6-.177-1.2-.264-1.8v-2.39c.074-.545.132-1.094.225-1.636a17.03,17.03,0,0,1,13.749-13.9c.606-.111,1.22-.18,1.83-.268H587.2a1.584,1.584,0,0,0,.254.061,15.077,15.077,0,0,1,4.876,1.15,16.8,16.8,0,0,1,10.409,12.794C602.853,162.72,602.913,163.324,603,163.924Zm-12.89,5.232c.011.036.012.051.018.054q.119.058.239.113a10.592,10.592,0,0,1,3.12,2.158,10.473,10.473,0,0,1,2.635,4.351c.063.2.113.271.283.082.222-.247.472-.468.687-.72,4.085-4.788,5.083-10.167,2.669-15.968a14.982,14.982,0,1,0-24.216,16.639c.209.208.266.191.358-.09a10.5,10.5,0,0,1,5.787-6.477c.071-.033.179-.03.2-.142a7.406,7.406,0,1,1,9.068-11.664,7.165,7.165,0,0,1,2.44,5.4A7.334,7.334,0,0,1,590.11,169.156Zm-4.163,1.228c-.275.016-.608.017-.937.057a8.592,8.592,0,0,0-7.425,6.735.394.394,0,0,0,.2.489,15,15,0,0,0,16.433,0,.4.4,0,0,0,.2-.486A8.612,8.612,0,0,0,585.947,170.384ZM586,157.6a5.392,5.392,0,1,0,5.386,5.394A5.372,5.372,0,0,0,586,157.6Z" transform="translate(0 0)" fill="#fff" stroke="#fff" stroke-width="1" />
                                                 </g>
                                             </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+                                            {/* <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                                            </svg>
+                                            </svg> */}
                                         </a>
                                             :
                                             ''
                                     }
-
                                 </li>
                             </ul>
                         </Link>
                         <div className="collapse navbar-collapse " id="navbarTogglerDemo03">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbarMenu">
                                 <li className="nav-item">
-                                    <a className="nav-link home" href="aboutus">About Us</a>
+                                    <a className="nav-link home" href="#">About Us</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Agents</a>
@@ -76,12 +76,6 @@ function Navbar() {
                                                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                                             </svg>
                                         </a>
-                                        {/* Sign In */}
-                                        {/* <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 35 35.013">
-                                            <g id="User" transform="translate(-568.5 -147.622)">
-                                                <path id="Path_25" data-name="Path 25" d="M603,163.924v2.39a1.527,1.527,0,0,0-.062.255,15.6,15.6,0,0,1-.4,2.516,16.992,16.992,0,0,1-18.9,12.875,16.434,16.434,0,0,1-8.669-3.906,16.683,16.683,0,0,1-5.7-9.942c-.107-.6-.177-1.2-.264-1.8v-2.39c.074-.545.132-1.094.225-1.636a17.03,17.03,0,0,1,13.749-13.9c.606-.111,1.22-.18,1.83-.268H587.2a1.584,1.584,0,0,0,.254.061,15.077,15.077,0,0,1,4.876,1.15,16.8,16.8,0,0,1,10.409,12.794C602.853,162.72,602.913,163.324,603,163.924Zm-12.89,5.232c.011.036.012.051.018.054q.119.058.239.113a10.592,10.592,0,0,1,3.12,2.158,10.473,10.473,0,0,1,2.635,4.351c.063.2.113.271.283.082.222-.247.472-.468.687-.72,4.085-4.788,5.083-10.167,2.669-15.968a14.982,14.982,0,1,0-24.216,16.639c.209.208.266.191.358-.09a10.5,10.5,0,0,1,5.787-6.477c.071-.033.179-.03.2-.142a7.406,7.406,0,1,1,9.068-11.664,7.165,7.165,0,0,1,2.44,5.4A7.334,7.334,0,0,1,590.11,169.156Zm-4.163,1.228c-.275.016-.608.017-.937.057a8.592,8.592,0,0,0-7.425,6.735.394.394,0,0,0,.2.489,15,15,0,0,0,16.433,0,.4.4,0,0,0,.2-.486A8.612,8.612,0,0,0,585.947,170.384ZM586,157.6a5.392,5.392,0,1,0,5.386,5.394A5.372,5.372,0,0,0,586,157.6Z" transform="translate(0 0)" fill="#fff" stroke="#fff" stroke-width="1" />
-                                            </g>
-                                        </svg> */}
                                     </a>
                                         :
                                         <a className="nav-link" href="#">
@@ -95,54 +89,10 @@ function Navbar() {
                                             </svg>
                                         </a>
                                 }
-
                             </li>
                         </ul>
                     </div>
                 </nav>
-
-
-
-                {/* <nav className="navbar navbar-expand-lg">
-                    <div className="portalNavbar">
-                        <div>
-                            <a className="navbar-brand" href="#">
-                                <img src="/assets/images/cubedotslogo/cubedots_logo.png" height="28" />
-                            </a>
-                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                                <span className="navbar-toggler-icon"></span>
-                            </button>
-                        </div>
-                        <div className="navbarMenu">
-                            <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                                <ul className="navbar-nav">
-                                    <li className="nav-item active">
-                                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">About Us</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Why Us</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">Projects</a>
-                                    </li>
-                                    <li className="nav-item">
-                                        <a className="nav-link" href="#">contact Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <ul className="signNavbar">
-                                <li className="nav-item">
-                                    <a className="nav-link signBtn" href="#">Sign In</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav> */}
             </div>
         </>
     )
