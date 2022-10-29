@@ -13,10 +13,14 @@ import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detec
 function DeveloperPage() {
 
     let publicPath = "https://reservation.cuengine.com/cubedots_new";
+    const [] = useState(true)
 
     return (
         <>
-            <div>
+            <div className="">
+                <div className="">
+
+                </div>
             </div>
         </>
     )

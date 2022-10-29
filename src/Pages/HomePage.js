@@ -5,6 +5,8 @@ import { Carousel } from 'react-responsive-carousel';
 import { useState } from "react";
 import axios from "axios"
 import AgentDevelopersPage from "./AgentDevelopersPage"
+import NurterDigital from "../Components/home/NurterDigital"
+import SecondDummy from "../Components/home/SecondDummy"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import $ from 'jquery';
@@ -327,10 +329,9 @@ function HomePage() {
                         </div>
                     </div>
                 </section >
-                <AgentDevelopersPage />
-                <div className="dummyContent">
-                    Next Section
-                </div>
+                {/* <AgentDevelopersPage /> */}
+                {/* <NurterDigital/> */}
+                <SecondDummy />
             </div >
         </>
     )

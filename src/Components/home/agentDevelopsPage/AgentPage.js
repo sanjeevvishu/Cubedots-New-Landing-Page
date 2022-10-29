@@ -265,8 +265,6 @@ function AgentPage() {
                                                             </div>
                                                         </div>
                                                 }
-
-
                                             </div>
                                         </div>
                                         <div className="col-lg-4 ps-0 pe-0">
@@ -346,7 +344,6 @@ function AgentPage() {
                                                             </div>
                                                         </div>
                                                 }
-
                                             </div>
                                         </div>
                                     </div>
@@ -357,6 +354,9 @@ function AgentPage() {
                     }
                 </div>
             </div>
+            <div className="dummyContent">
+                    Next Section
+                </div>
         </>
     )
 }
