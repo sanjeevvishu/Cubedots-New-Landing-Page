@@ -6,8 +6,6 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 
-
-
 function NurterDigital() {
     let publicPath = "https://reservation.cuengine.com/cubedots_new/";
 
@@ -85,20 +83,23 @@ function NurterDigital() {
                     <Video className="videoPlayer" preload playsInline autoPlay loop muted controls={false}
                         src={publicPath + projectDetail[3].video_url} />
                     {/* <div className={temaModal ? "mixBlend" : "mixBlendFalse"}> */}
-                    <div className={temaModal ? "mixBlend" : "mixBlendFalse"} >
-                        <div className="oneMoreMix">
-                            {/* <Button variant="primary" onClick={handleShow}> */}
-                            <ul className="letterT">
-                                <a onClick={() => { setTemaModal(false) }}>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </a>
-                            </ul>
-                            {/* </Button> */}
+                    <div className="temaBackgroundColor">
+                        {/* <div className={temaModal ? "mixBlend" : "mixBlendFalse"} > */}
+                        <div className="mixBlend">
+                            <div className="oneMoreMix">
+                                {/* <Button variant="primary" onClick={handleShow}> */}
+                                <ul className="letterT">
+                                    <a onClick={() => { setTemaModal(false) }}>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                        <li></li>
+                                    </a>
+                                </ul>
+                                {/* </Button> */}
+                            </div>
                         </div>
                     </div>
                     <div className="tema2dContent">

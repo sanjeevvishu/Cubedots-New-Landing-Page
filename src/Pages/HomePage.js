@@ -330,8 +330,8 @@ function HomePage() {
                     </div>
                 </section >
                 {/* <AgentDevelopersPage /> */}
-                <NurterDigital/>
-                {/* <SecondDummy /> */}
+                {/* <NurterDigital/> */}
+                <SecondDummy />
             </div >
         </>
     )
